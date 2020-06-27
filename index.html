@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+
+
+    <div class="main">
+        <div> <input onblur="this.style.backgroundColor ='grey'" onfocus="this.style.backgroundColor ='white'"   id = "result" class ="result" type="text"></div>
+        <div>
+        <button class="clearbtn" onclick="clearNum()">C</button>
+        </div>
+        <div>
+            <button class="btn" onclick="insertNum('7')">7</button>
+            <button class="btn" onclick="insertNum('8')">8</button>
+            <button class="btn" onclick="insertNum('9')">9</button>
+            <button class="btn" onclick="insertNum('+')">+</button>
+        </div>
+
+
+        <div>
+            <button class="btn" onclick="insertNum('4')">4</button>
+            <button class="btn" onclick="insertNum('5')">5</button>
+            <button class="btn" onclick="insertNum('6')">6</button>
+            <button class="btn" onclick="insertNum('*')">X</button>
+        </div>
+
+
+        <div>
+            <button class="btn" onclick="insertNum('1')">1</button>
+            <button class="btn" onclick="insertNum('2')">2</button>
+            <button class="btn" onclick="insertNum('3')">3</button>
+            <button class="btn" onclick="insertNum('-')" >-</button>
+        </div>
+
+        <div>
+            <button class="lastbtn" onclick="insertNum('0')">0</button>
+            <button  class="lastbtn" onclick="getResult()"> = </button>
+          
+        </div>
+
+
+
+
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
